@@ -5,7 +5,74 @@
 @import "./flexgrid.less";
 
 html,body,div,span,a,li,td,th {
-  font-family: 'Lato', sans-serif;
+  font-family: '微软雅黑','Lato',sans-serif;
+}
+
+.flex{
+  display:flex;
+}
+.btn-social > :first-child {
+  top: 3px;
+}
+img.community-cover{
+  width:100%;
+}
+.bg-red{
+  background-color: #E4155D;
+}
+.bg-black{
+  background-color: #161514;
+}
+.bg-light-green{
+  background-color: #7fe152;
+}
+.bg-orange{
+  background-color: #E25F4B;
+}
+.bg-light-blue{
+  background-color: #2594F2;
+}
+.bg-deep-blue{
+  background-color: #1371FB;
+}
+.superlink{
+  background-color: rgba(228,233,229,1);
+}
+.introduction>a{
+  color: #333;
+}
+.width-70{
+  width:70px;
+  height:70px;
+}
+.img-circle{
+  border: 1px solid #eee;
+}
+.timeline{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.line {
+  background: #e6e6e6;
+  height: 4px;
+  flex: 1;
+}
+.font-size-10{
+  font-size:10px;
+}
+.rectangle{
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  color:white;
+  font-size: 10px;
+}
+.vertical-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 bold {
@@ -333,6 +400,26 @@ p.stats {
   margin: auto;
 }
 
+.btn-social-google {
+  background: #FFFFFF;
+  color: #DD4B39;
+  border: 1px solid #DD4B39;
+}
+
+.btn-social-google:hover, .btn-social-google:focus {
+  background: #DD4B39;
+}
+
+.btn-social-github {
+  background: #FFFFFF;
+  color: #444444;
+  border: 1px solid #444444;
+}
+
+.btn-social-github:hover, .btn-social-github:focus {
+  background: #2b2b2b;
+}
+
 .btn-link-social {
   max-width: 400px;
   margin: auto;
@@ -496,7 +583,7 @@ form.update-email .btn{
 
 .landing-skill-icon {
   color: @brand-primary;
-  font-size: 150px;
+  font-size: 50px;
 }
 
 .custom-landing-skill-icon {
@@ -510,9 +597,12 @@ form.update-email .btn{
   font-size: 40px;
 }
 
+.icon50{
+  width:50px;
+}
+
 .font-awesome-padding {
-  margin-top: 45px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .background-svg {
@@ -525,7 +615,7 @@ form.update-email .btn{
 }
 
 .testimonial-image {
-  border-radius: 5px;
+  border-radius: 50%;
   height: 200px;
   width: 200px;
   color: #009900
@@ -540,17 +630,24 @@ form.update-email .btn{
   border-radius: 5px;
 }
 
-.height-500 {
-  height: 500px;
+.introduction {
+  margin:0;
+}
+.green{
+  color: #029950;
 }
 
-.height-400 {
-  height: 400px;
+.outer{
+  background-color:#000;
+}
+
+.inner{
+  -webkit-mask:-webkit-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5));
 }
 
 .testimonial-copy {
   text-align: center;
-  font-size: 18px !important;
+  font-size: 14px !important;
   margin-left: 20px;
   margin-right: 20px;
   @media (min-width: 991px) and (max-width: 1199px) {

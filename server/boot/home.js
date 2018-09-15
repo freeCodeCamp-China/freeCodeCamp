@@ -4,7 +4,7 @@ import { cachedMap } from '../utils/map';
 // import NewsFeed from '../rss';
 
 // const news = new NewsFeed();
-
+console.log('enter home')
 module.exports = function(app, done) {
   const { About } = app.models;
   const router = app.loopback.Router();
@@ -40,6 +40,7 @@ module.exports = function(app, done) {
   function index(req, res) {
     const { user } = req;
     const homePage = user ? 'userHome' : 'noUserHome';
+    console.log(homePage)
     const { quote, author} = randomQuote();
     const title = user ?
       `Welcome, ${user.name ? user.name : 'Camper'}!` :

@@ -36,8 +36,38 @@ module.exports = function(app) {
       softwareResourcesForNonprofits
   );
   router.get('/academic-honesty', academicHonesty);
+  router.get('/terms',terms);
+  router.get('/privacy',privacy);
+  router.get('/community', community);
+  router.get('/volunteer', volunteer);
+  // router.get('/volunteer', volunteer);
 
   app.use(router);
+
+
+  function community(req,res){
+    res.render('resources/community',{
+      title: '社区'
+    })
+  }
+
+  function volunteer(req,res){
+    res.render('resources/volunteer',{
+      title: '志愿者'
+    })
+  }
+
+  function terms(req,res){
+    res.render('resources/terms',{
+      title: '服务条款'
+    })
+  }
+
+  function privacy(req,res){
+    res.render('resources/privacy',{
+      title: '隐私策略'
+    })
+  }
 
   function chat(req, res) {
     res.redirect('https://gitter.im/FreeCodeCamp/FreeCodeCamp');
@@ -56,6 +86,7 @@ module.exports = function(app) {
   }
 
   function academicHonesty(req, res) {
+    console.log('academicHonesty')
       res.render('resources/academic-honesty', {
           title: 'Academic Honesty policy'
       });

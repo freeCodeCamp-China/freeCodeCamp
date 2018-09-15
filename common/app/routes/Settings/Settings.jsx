@@ -82,7 +82,7 @@ export class Settings extends React.Component {
               className='btn-link-social'
               href={ `/${username}`}
               >
-              Show me my public portfolio
+              个人作品集
             </Button>
           <Button
             block={ true }
@@ -91,10 +91,10 @@ export class Settings extends React.Component {
             className='btn-link-social'
             href={ '/signout' }
             >
-            Sign me out of freeCodeCamp
+            退出账户
           </Button>
         </FullWidthRow>
-        <h1 className='text-center'>{ `Account Settings for ${username}` }</h1>
+        <h1 className='text-center'>{ `${username} 的账户中心` }</h1>
         <div className='offset-negative-row'>
         <AboutSettings />
         <Spacer />

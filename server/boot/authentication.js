@@ -31,15 +31,25 @@ module.exports = function enableAuthentication(app) {
 
   router.get('/signup', (req, res) => res.redirect(301, '/signin'));
   router.get('/email-signin', (req, res) => res.redirect(301, '/signin'));
-  router.get('/login', (req, res) => res.redirect(301, '/signin'));
+  // router.get('/login', (req, res) => res.redirect(301, '/signin'));
   router.get('/deprecated-signin', (req, res) => res.redirect(301, '/signin'));
 
   router.get('/logout', (req, res) => res.redirect(301, '/signout'));
 
   router.get('/signin',
     ifUserRedirect,
-    (req, res) => res.redirect('/auth/auth0')
+    function(req, res){
+      console.log('signin')
+      return res.redirect('/auth/github')
+    }
   );
+
+  router.get('/account-login',ifUserRedirect,function(req,res){
+    console.log('account-login')
+    res.render('account/login',{
+      title: '账户登录'
+    })
+  })
 
   router.get(
     '/update-email',

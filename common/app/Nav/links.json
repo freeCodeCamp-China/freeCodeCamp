@@ -1,15 +1,20 @@
 [
   {
-    "content": "Curriculum",
-    "link": "https://learn.freecodecamp.org"
-  },
-  {
-    "content": "Forum",
-    "link": "https://forum.freecodecamp.org/",
+    "content": "课程",
+    "link": "https://learn.freecodecamp.one",
     "target": "_blank"
   },
   {
-    "content": "News",
-    "link": "https://www.freecodecamp.org/news"
+    "content": "论坛",
+    "link": "https://forum.freecodecamp.one/",
+    "target": "_blank"
+  },
+  {
+    "content": "社区",
+    "link": "/community"
+  },
+  {
+    "content": "志愿者",
+    "link": "/volunteer"
   }
 ]

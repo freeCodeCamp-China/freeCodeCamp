@@ -38,7 +38,7 @@ function SignUpButton({ isInDropDown, showLoading, showSignUp }) {
       key='user'
       >
       <Link to={ onRouteSettings() }>
-        Settings
+        设置
       </Link>
     </li>
   );

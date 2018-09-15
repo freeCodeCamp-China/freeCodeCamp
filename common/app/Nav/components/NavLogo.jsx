@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { NavbarBrand } from 'react-bootstrap';
 import Media from 'react-media';
 
-const fCClogo = 'https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg';
-const fCCglyph = 'https://s3.amazonaws.com/freecodecamp/FFCFire.png';
+const fCClogo = '/images/freecodecamp_logo.svg';
+const fCCglyph = '/images/FFCFire.svg';
 
 const propTypes = {
   clickOnLogo: PropTypes.func.isRequired

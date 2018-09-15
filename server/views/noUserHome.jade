@@ -1,90 +1,155 @@
 extends layout
 block content
-    .text-center
-        .row
-            h1.landing-heading Learn to code for free.
-            .big-break
-            include homePartials/activeUsersView
-            .big-break
-            .big-break
-            .col-xs-12.col-sm-12.col-md-4
-                img.img-responsive.landing-icon.img-center(src= 'https://s3.amazonaws.com/freecodecamp/landing-icon-community.svg', alt='Get great references and connections to start your software engineer career')
-                p.large-p Join a supportive community of millions of coders.
-
-            .col-xs-12.col-sm-12.col-md-4
-                img.img-responsive.landing-icon.img-center(src= 'https://s3.amazonaws.com/freecodecamp/landing-icon-certificate.svg', alt='Help nonprofits with bro bono code projects')
-                p.large-p Build projects and earn free certifications.
-
-            .col-xs-12.col-sm-12.col-md-4
-                img.img-responsive.landing-icon.img-center(src= 'https://s3.amazonaws.com/freecodecamp/landing-icon-experience.svg', alt='Get hired as a developer and start your software engineer career')
-                p.large-p Get experience by coding for nonprofits.
-
-        .big-break
-        .big-break
-        .row
-            .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-cta.signup-btn.btn-block(href="/signin") Start coding (it's free)
-        .spacer
-        h2 As featured in:
-        img.img-center.img-responsive(src='https://s3.amazonaws.com/freecodecamp/as-seen-on.png')
-        .spacer
-        hr
-        .spacer
-        h2 Launch your developer career
-        .spacer
-        .row
-            .col-xs-12.col-sm-12.col-md-4
-                img.img-responsive.testimonial-image.img-center(src="https://i.imgur.com/nsvNixW.jpg", alt="Meta's testimonial image")
-                p.testimonial-copy Through freeCodeCamp, I built a robust and highly functional web app for a nonprofit. This led me to getting a fantastic job.
-                h3 - Meta Hirschl
-            .col-xs-12.col-sm-12.col-md-4
-                img.img-responsive.testimonial-image.img-center(src="https://i.imgur.com/QPpjPac.jpg", alt="Brian's testimonial image")
-                p.testimonial-copy freeCodeCamp is a great way for disabled veterans like me to retrain. I'm already receiving software engineering job offers.
-                h3 - Brian Grant
-            .col-xs-12.col-sm-12.col-md-4
-                img.img-responsive.testimonial-image.img-center(src="https://i.imgur.com/wjlDigg.jpg", alt="Maxim Orlov's testimonial image")
-                p.testimonial-copy I joined freeCodeCamp with zero knowledge of web development. 6 months later, I landed my first job as a back end engineer.
-                h3 - Maxim Orlov
-        .spacer
-        hr
-        .spacer
-        h2 Learn powerful skills
-        .spacer
-        .row
-            .text-center.negative-35
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.fab.fa-html5.font-awesome-padding
-                    h2.black-text HTML5
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.fab.fa-css3-alt.font-awesome-padding
-                    h2.black-text CSS3
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.fab.fa-js.font-awesome-padding
-                    h2.black-text JavaScript
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.fas.fa-database.font-awesome-padding
-                    h2.black-text Databases
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.fab.fa-github.font-awesome-padding
-                    h2.black-text Git & GitHub
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.fab.fa-node-js.font-awesome-padding
-                    h2.black-text Node.js
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.fab.fa-react.font-awesome-padding
-                    h2.black-text React.js
-                .col-xs-12.col-sm-6.col-md-3
-                    .landing-skill-icon.custom-landing-skill-icon
-                        img(src='https://s3.amazonaws.com/freecodecamp/d3-logo.svg')
-                    h2.black-text D3.js
-        .big-break
-        .row
-            .col-xs-12.col-sm-8.col-sm-offset-2
-                a.btn.btn-cta.signup-btn.btn-block(href="/signin") Start coding (it's free)
-        .big-break
-        .big-break
-        hr
-        .big-break
-        .big-break
-        .big-break
-        include homePartials/scripts
+  .superlink
+    .container.text-center
+      .row
+        .col-md-3.col-sm-3.col-xs-6
+          p.introduction
+            a(href="/community#one")   
+              span 建立 
+              span.green 2 
+              span 年
+        .col-md-3.col-sm-3.col-xs-6
+          p.introduction
+            a(href="/community#online")  
+              span 覆盖 
+              span.green 6 
+              span 大社区
+        .col-md-3.col-sm-3.col-xs-6
+          p.introduction
+            a(href="/community#city")  
+              span 点亮 
+              span.green 12 
+              span 座城市
+        .col-md-3.col-sm-3.col-xs-6
+          p.introduction
+            a(href="/volunteer")  
+              span 召集 
+              span.green 40 
+              span 名志愿者
+  .container.text-center
+    img.img-responsive(src='https://ofa83l6ao.qnssl.com/bg.jpg')
+  .container.text-center
+    .row
+      h1 Learning by Doing
+      .big-break
+      include homePartials/activeUsersView
+      .big-break
+      .big-break
+      .col-xs-12.col-sm-3.col-md-3
+        img.img-responsive.landing-icon.img-center(src='https://ofa83l6ao.qnssl.com/landing-icon-community.svg', alt='加入一个平等自由快乐的社区')
+        p 加入一个平等自由快乐的社区
+      .col-xs-12.col-sm-3.col-md-3
+        img.img-responsive.landing-icon.img-center(src='https://ofa83l6ao.qnssl.com/landingIcons_learn.svg', alt='召唤你的小伙伴一起编程闯关')
+        p 召唤你的小伙伴一起编程闯关
+      .col-xs-12.col-sm-3.col-md-3
+        img.img-responsive.landing-icon.img-center(src='https://ofa83l6ao.qnssl.com/landing-icon-certificate.svg', alt='亲手构建项目并获得免费证书')
+        p 亲手构建项目并获得免费证书
+      .col-xs-12.col-sm-3.col-md-3
+        img.img-responsive.landing-icon.img-center(src='https://ofa83l6ao.qnssl.com/landing-icon-experience.svg', alt='一起帮助非盈利组织开发项目')
+        p 一起帮助非盈利组织开发项目
+    .spacer
+    .big-break
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3
+          a.btn.btn-cta.signup-btn.btn-block(href="/account-login" target='_blank') 开始闯关
+    .spacer
+    hr
+    .spacer
+    .row
+      h2 课程大纲
+      .big-break
+      .big-break
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+            img.icon50(src='https://ofa83l6ao.qnssl.com/HTML5.jpg')
+        h5 HTML5
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/CSS3.jpg')
+        h5 CSS3
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/JS.jpg')
+        h5 ES6
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/bootstrap-solid.svg')
+        h5 Bootstrap
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/jquery.gif')
+        h5 jQuery
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/sass.svg')
+        h5 Sass
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/d3.svg')
+        h5 D3
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/react.svg')
+        h5 React
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/redux.png')
+        h5 Redux
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/node.jpg')
+        h5 Node
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon
+          img.icon50(src='https://ofa83l6ao.qnssl.com/npm.svg')
+        h5 Npm
+      .col-xs-6.col-sm-3.col-md-1
+        .landing-skill-icon.fas.fa-database.font-awesome-padding
+        h5 MongoDB
+    .big-break
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3
+        a.btn.btn-cta.signup-btn.btn-block(href="https://learn.freecodecamp.one/") 更多课程
+    .spacer
+    hr
+    .spacer
+    .row
+      h2 学员分享
+      .big-break
+      .big-break
+      .col-xs-12.col-sm-4.col-md-4
+        img.img-responsive.testimonial-image.img-center(src="https://ofa83l6ao.qnssl.com/魏朝欣.jpg", alt="魏朝欣")
+        p 魏朝欣
+        p.testimonial-copy 对于还没有形成编程思维的新人，即使是 leetcode 上面 easy 级别的算法题目都感到非常有难度，而 freeCodeCamp 的算法题恰好是一个良好的过渡。
+        //- h5 by 魏朝欣——23魔方（成都）前端工程师
+      .col-xs-12.col-sm-4.col-md-4
+        img.img-responsive.testimonial-image.img-center(src="https://ofa83l6ao.qnssl.com/姜玉珍.jpg", alt="姜玉珍")
+        p 姜玉珍
+        p.testimonial-copy 我在实习的时候，导师就叮嘱我在 freeCodeCamp 上做题闯关。技术的精进不仅给了我强大的自信，也让我得以进入大厂 ThoughtWorks。
+        //- h5 by 姜姜——ThoughtWorks（成都）前端工程师
+      .col-xs-12.col-sm-4.col-md-4
+        img.img-responsive.testimonial-image.img-center(src="https://ofa83l6ao.qnssl.com/陈志成.jpg", alt="陈志成")
+        p 陈志成
+        p.testimonial-copy freeCodeCamp 打开了我技术视野，我不仅接触到 codepen、c9.io 这些前沿项目，参加线下活动更是结识了很多志同道合的小伙伴。
+        //- h5 by 陈志成——来帮你（深圳）后端工程师
+    .big-break
+    .big-break
+    .row
+      .col-xs-12.col-sm-6.col-sm-offset-3
+        a.btn.btn-cta.signup-btn.btn-block(href="https://mp.weixin.qq.com/mp/homepage?__biz=MzU2MzY3NTM1Nw%3D%3D&hid=11&sn=7aa276b9ccffb94e7bd346bc43f8d402&scene=1&devicetype=android-23&version=26070213&lang=zh_CN&nettype=WIFI&ascene=7&session_us=gh_0a8f138a2d15&wx_header=1" target='_blank') 更多分享
+    .spacer
+    .big-break
+    //- .big-break
+    //- .spacer
+    //- hr
+    //- .spacer
+    //- h2 证书展示
+    //- .spacer
+    //- .row
+    //-     .col-xs-12.col-sm-12.col-md-12
+    //-         img.img-responsive(src="https://ofa83l6ao.qnssl.com/backend.jpg", alt="证书")
+    //- .big-break
+    //- .big-break
+    //- .big-break
+    include homePartials/scripts

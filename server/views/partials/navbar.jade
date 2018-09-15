@@ -3,20 +3,22 @@ nav.navbar.navbar-default.navbar-static-top.nav-height
     .navbar-header
         button.hamburger.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
             .col-xs-12
-                span.hamburger-text Menu
+                span.hamburger-text 菜单
         a.navbar-brand(href='/')
-            img.img-responsive.nav-logo(src='https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg', alt='learn to code javascript at freeCodeCamp logo')
+            img.img-responsive.nav-logo(src='/images/freecodecamp_logo.svg', alt='freeCodeCamp logo')
     .collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right.hamburger-dropdown
             li
-                a(href='https://learn.freecodecamp.org' rel='noopener') Curriculum
+                a(href='https://learn.freecodecamp.one' target='_blank' rel='noopener') 课程
             li
-                a(href='https://forum.freecodecamp.org', target='_blank' rel='noopener') Forum
+                a(href='https://forum.freecodecamp.one', target='_blank' rel='noopener') 论坛
             li
-                a(href='/news', rel='noopener') News
+                a(href='/community', rel='noopener') 社区
+            li
+                a(href='/volunteer', rel='noopener') 志愿者
             if !user
                 li
-                    a(href='/signin') Sign in
+                    a(href='/account-login') 登录
             else
                 li
-                  a(href='/settings') Settings
+                  a(href='/settings') 设置

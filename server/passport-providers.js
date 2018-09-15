@@ -13,6 +13,34 @@ export default {
     session: true,
     failureFlash: true
   },
+  'github-login': {
+    provider: 'github',
+    authScheme: 'oauth2',
+    module: 'passport-github',
+    authPath: '/auth/github',
+    callbackURL: '/auth/github/callback',
+    callbackPath: '/auth/github/callback',
+    successRedirect: successRedirect,
+    failureRedirect: failureRedirect,
+    clientID: process.env.GITHUB_ID,
+    clientSecret: process.env.GITHUB_SECRET,
+    scope: ['email'],
+    failureFlash: true
+  },
+  // 'google-login': {
+  //   provider: 'google',
+  //   authScheme: 'oauth2',
+  //   module: 'passport-google',
+  //   authPath: '/auth/google',
+  //   callbackURL: '/auth/google/callback',
+  //   callbackPath: '/auth/google/callback',
+  //   successRedirect: successRedirect,
+  //   failureRedirect: failureRedirect,
+  //   clientID: process.env.GOOGLE_ID,
+  //   clientSecret: process.env.GOOGLE_SECRET,
+  //   scope: ['email'],
+  //   failureFlash: true
+  // },
   'auth0-login': {
     provider: 'auth0',
     module: 'passport-auth0',
@@ -26,7 +54,7 @@ export default {
     useCustomCallback: true,
     successRedirect: successRedirect,
     failureRedirect: failureRedirect,
-    scope: ['openid profile email'],
+    scope: ['profile email'],
     failureFlash: true
   }
 };
