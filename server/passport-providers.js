@@ -24,8 +24,9 @@ export default {
     failureRedirect: failureRedirect,
     clientID: process.env.GITHUB_ID,
     clientSecret: process.env.GITHUB_SECRET,
-    scope: ['email'],
-    failureFlash: true
+    scope: 'user:email',
+    failureFlash: true,
+    useCustomCallback: true
   },
   // 'google-login': {
   //   provider: 'google',
