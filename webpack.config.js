@@ -6,6 +6,7 @@ const Visualizer = require('webpack-visualizer-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 var __DEV__ = process.env.NODE_ENV !== 'production';
+console.log('Dev '+__DEV__);
 
 module.exports = {
   entry: {
