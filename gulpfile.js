@@ -37,7 +37,10 @@ Rx.config.longStackSupport = true;
 const sync = browserSync.create('fcc-sync-server');
 
 // user definable
+console.log(yargs.argv)
 const __DEV__ = !yargs.argv.p;
+console.log('dev: '+__DEV__)
+
 const host = process.env.HOST || 'localhost';
 const port = yargs.argv.port || process.env.PORT || '3001';
 const syncPort = yargs.argv['sync-port'] || process.env.SYNC_PORT || '3000';

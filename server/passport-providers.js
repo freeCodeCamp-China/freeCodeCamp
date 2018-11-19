@@ -16,7 +16,7 @@ export default {
   'github-login': {
     provider: 'github',
     authScheme: 'oauth2',
-    module: 'passport-github',
+    module: 'passport-github2',
     authPath: '/auth/github',
     callbackURL: '/auth/github/callback',
     callbackPath: '/auth/github/callback',
@@ -24,10 +24,24 @@ export default {
     failureRedirect: failureRedirect,
     clientID: process.env.GITHUB_ID,
     clientSecret: process.env.GITHUB_SECRET,
-    scope: 'user:email',
+    scope: ['user:email'],
     failureFlash: true,
     useCustomCallback: true
   },
+  // 'github-login': {
+  //   provider: 'github',
+  //   authScheme: 'oauth2',
+  //   module: 'passport-github2',
+  //   authPath: '/auth/github',
+  //   callbackURL: '/auth/github/callback',
+  //   callbackPath: '/auth/github/callback',
+  //   successRedirect: successRedirect,
+  //   failureRedirect: failureRedirect,
+  //   clientID: process.env.GITHUB_ID,
+  //   clientSecret: process.env.GITHUB_SECRET,
+  //   scope: ['email'],
+  //   failureFlash: true
+  // },
   // 'google-login': {
   //   provider: 'google',
   //   authScheme: 'oauth2',

@@ -14,6 +14,7 @@ chunkManifest = Object.keys(chunkManifest).reduce((manifest, key) => {
 }, {});
 
 const isDev = process.env.NODE_ENV !== 'production';
+console.log('jadeHelpers:' + isDev)
 const challengesRegex = /^(bonfire|waypoint|zipline|basejump|checkpoint):\s/i;
 
 function rev(scopedPrepend, asset) {
